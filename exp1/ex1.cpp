@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+int isnumeric(int);
 int main()
 {
 	int array[10],n;
@@ -12,7 +13,8 @@ int main()
 	}
 	for(int i=0; i<n ; i++)
 	{
-		if(isnumeric(array[i]))
+		int val=array[i];
+		if(isnumeric(val))
 		{
 			cout<<"\n"<<array[i]<<" is a number";
 		}
