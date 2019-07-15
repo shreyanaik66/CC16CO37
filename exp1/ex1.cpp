@@ -16,11 +16,11 @@ int main()
 		int val=array[i];
 		if(isnumeric(val))
 		{
-			cout<<"\n"<<array[i]<<" is a number";
+			cout<<"\n"<<val<<" is a number";
 		}
 		else
 		{
-			cout<<"\n"<<array[i]<<" is a character";
+			cout<<"\n"<<val<<" is a character";
 		}
 	}	
 }
