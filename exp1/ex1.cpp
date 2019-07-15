@@ -1,9 +1,10 @@
 #include<iostream>
 using namespace std;
-int isnumeric(int);
+int isnumeric(char);
 int main()
 {
-	int array[10],n;
+	char array[10];
+	int n;
 	cout<<"\nEnter the size";
 	cin>>n;
 	cout<<"\nEnter the data:";
@@ -13,7 +14,7 @@ int main()
 	}
 	for(int i=0; i<n ; i++)
 	{
-		int val=array[i];
+		char val=array[i];
 		if(isnumeric(val))
 		{
 			cout<<"\n"<<val<<" is a number";
@@ -24,7 +25,7 @@ int main()
 		}
 	}	
 }
- int isnumeric(int a)
+ int isnumeric(char a)
  {
 	 if(a=='0' || a=='1' || a=='2' || a=='3' || a=='4' || a=='5' || a=='6' || a=='7' || a=='8' || a=='9')
 	 return 1;
